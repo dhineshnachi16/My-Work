@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Bootstrap Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+
+    <style>
+    body{
+        background-color: whitesmoke;
+    }
+    button{
+        width:100%;
+    }
+    input{
+        width: 100%;
+        height: 45px;
+    }
+</style>
+</head>
+<body>
+
+    <div class="container w-25 bg-white mt-5">
+        <h3 style="text-align: center;">Register with us</h3>
+        <form action="/sign.html" method="post" id="myForm" class="text-secondary">
+    
+            <div class="field">
+                <label for="cname" class="form-label w-100">Username</label>
+                <input type="text" class="form-control w-100" id="cname" name="cname" placeholder="Full name">
+                <div class="text-danger"></div>
+            </div>
+            <div class="field">
+                <label for="email" class="form-label w-100">Email</label>
+                <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                <div class="text-danger"></div>
+            </div>
+            <div class="field">
+                <label for="password" class="form-label w-100">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
+                <div class="text-danger"></div>
+            </div>
+            <div class="field">
+                <label for="cpassword" class="form-label w-100">Confirm Password</label>
+                <input type="password" class="form-control" id="cpassword" name="cpassword" placeholder="Enter password again">
+                <div class="text-danger"></div>
+            </div>
+            <br>
+            <div class="field">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+    
+        </form>
+    </div>
+        <script src="form.js"></script>
+    
+    
+</body>
+</html>
