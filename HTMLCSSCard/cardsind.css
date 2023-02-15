@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam&family=Raleway&display=swap');
+body{
+    background-color: rgb(92, 92, 94);
+    font-family: "Kufam","Raleway",sans-serif;
+}
+img{
+    width: 300px;
+    height: 250px;
+    border-radius: 5%;
+    margin: auto;
+    display: block;
+}
+.container{
+    width: min-content;
+    margin: auto;
+    margin-top: 15vh;
+}
+.over{
+    position: relative;
+}
+.icon{
+    position: absolute;
+    top: 50px;
+    left: 280px;
+    color: rgb(255, 255, 255);
+}
+.card-img{
+    border-radius: 5%;
+    box-shadow: .5px .5px 10px .75px black;
+}
+.card-content{
+    border: 1px solid white;
+    background-color: whitesmoke ;
+    padding: 10px;
+    box-shadow: .5px .5px 10px .75px black;
+    margin-top: -5px;
+}
+.tag{
+    color: black;
+    font-size: 25px;
+    font-weight: 50px;    
+}
+button{
+    border: none;
+    width: 100%;
+    background-color: blueviolet;
+    padding: 5px;
+    color: white;
+}
+button:hover{
+    cursor: pointer ;
+}
