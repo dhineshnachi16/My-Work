@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    
+    <title>Technical Documentation</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;   
+        }    
+        a{
+            border: 3px solid black;
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            width: 100%;
+            margin: 4px;
+        }
+        #code{
+            background-color: rgb(165, 162, 162);
+            padding: 25px;
+            z-index: 0;
+        }
+        #fix{
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+<main>
+    <body>
+    <div class="row">  
+        <div id="fix" class="col-sm-3">
+            <h3>Documentation Menu</h3>
+            <nav>
+                <div class="navbar position-fixed w-25">
+                    <a href="#c">What is C++</a>
+                    <a href="#obj">Objects and Classes</a>
+                    <a href="#inheritance">Inheritance</a>
+                    <a href="#Polymorphism">Polymorphism</a>
+                    <a href="#Abstraction">Abstraction</a>
+                    <a href="#Encapsulation">Encapsulation</a>
+                </div>
+            </nav>
+        </div>
+        <div class="col-sm-8 position-relative">
+            <div id="c">
+                <h3>What is C++?</h3>
+                <p>C++ is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as
+                possible. It is a general-purpose programming language intended to let application developers write once, run anywhere (WORA).[17]
+                meaning that compiled c++ code can run on all platforms that support c++ without the need for recompilation.
+                 <br>
+                 <br>
+                The "Hello World" program is the first step towards learning any programming language and also one of the simplest programs you will learn.
+                All you have to do is display the message "Hello World" on the screen.</p>
+                <p> Let us now look at the program:
+                <br>
+                <div id="code">public class HelloWorldApp <br>
+                public static void main(String[] args) { <br>
+                system.outprintln("Hello World")) <br>
+                } </div></p>
+                </div>
+                <div id="obj">
+                C++ is an Object Oriented Programming Language. <br>
+                The main pillars of Object Oriented Programming are:
+                <ul>
+                    <li>Inheritance</li>
+                    <li>Polymorphism</li>
+                    <li>Abstraction</li>
+                    <li>Encapsulation</li>
+                </ul>
+            </div>
+            <div id="inheritance">
+                <h3>Inheritance</h3>
+                <p>Inheritance is the ability of one object to acquire some/all properties of another object. For example, a child inherits the traits of his/her
+                    parents. With inheritance, reusability is a major advantage. You can reuse the fields and methods of the existing class. In c++, there are
+                    various types of inheritances: single, multiple, multilevel, hierarchical, and hybrid. For example, Apple is a fruit so assume that we have a
+                    class Fruit and a subclass of it named Apple. Our Apple acquires the properties of the Fruit class. Other classifications could be grape, pear,
+                    and mango, etc. Fruit defines a class of foods that are mature ovaries of a plant, fleshy, contains a large seed within or numerous tiny seeds.
+                    Apple the sub-class acquires these properties from Fruit and has some unique properties, which are different from other sub-classes of Fruit
+                    such as red, round, depression at the top.
+                </p>
+                <h5>Mode of Inheritance:</h5>
+                <p>
+                <strong> Public Mode:</strong> If we derive a sub class from a public base class. Then the public member of the base class will become public in the derived
+                class and protected members of the base class will become protected in derived class.</p>
+                <p><strong>Protected Mode:</strong> If we derive a sub class from a Protected base class. Then both public member and protected members of the base class
+                will harome protected in derived place </p>
+                <p><strong>Private Mode:</strong> If we derive a sub class from a Private base class. Then both public member and protected members of the base class will
+                become Private in derived class.</p>
+                <h5>Types of Inheritance in c++ :</h5>
+                <p>
+                <strong> Single Inheritance:</strong> In single inheritance, a class is allowed to inherit from only one class. i.e. one sub class is inherited by one base class
+                only.    
+                <p><strong>Multiple Inheritance:</strong> Multiple Inheritance is a feature of C++ where a class can inherit from more than one classes. I.e one sub class is
+                inherited from more than one base classes.</p>
+                <p><strong>Multilevel Inheritance:</strong> In this type of inheritance, a derived class is created from another derived class. </p>
+                <p><strong>Hieratical Inheritance:</strong> In this type of inheritance, more than one sub class is inherited from a single base class i.e. more than one derived
+                class is created from a single base class. </p>
+                <p><strong>Hybrid (Virtual) Inheritance:</strong> Hybrid Inheritance is implemented by combining more than one type of inheritance. For example: Combining
+                Hierarchical inheritance and Multiple Inheritance.
+                    </p>    
+            </div>
+            <div id="Polymorphism">
+                <h3>Polymorphism</h3>
+                <p>Polymorphism gives us a way to use a class exactly like its parent so there is no confusion with mixing types. This being said, each child sub-
+                class keeps its own functions/methods as they are. If we had a superclass called Mammal that has a method called mammalSound(). The sub-
+                classes of Mammals could be Dogs, whales, elephants, and horses. Each of these would have their own iteration of a mammal sound (dog-
+                barks, whale-clicks). <br>
+                <b>In c++ polymorphism is mainly divided into two types:</b><ol>
+                    <li>Compile time Polymorphism</li>
+                    <li>Runtime Polymorphism</li>
+                </ol>
+                Compile time polymorphism: This type of polymorphism is achieved by function overloading or operator overloading. <br>
+                Runtime polymorphism: This type of polymorphism is achieved by Function Overriding.
+                </p>
+            </div>
+            <div id="Abstraction">
+                <h3>Abstraction</h3>
+                <p>
+                    Abstraction is an extension of encapsulation. It is the process of selecting data from a larger pool to show only the relevant details to the
+                    object.
+                    Suppose you want to create a dating application and you are asked to collect all the information about your users. You might receive the
+                    following data from your user: Full name, address, phone number, favorite food, favorite movie, hobbies, tax information, social security
+                    number, credit score. This amount of data is great however not all of it is required to create a dating profile. You only need to select the
+                    information that is pertinent to your dating application from that pool. Data like Full name, favorite food, favorite movie, and hobbies make
+                    sense for a dating application. The process of fetching/removing/selecting the user information from a larger pool is referred to as Abstraction.
+                    One of the advantages of Abstraction is being able to apply the same information you used for the dating application to other applications with
+                    little or no modification.
+                </p>
+                <p><strong>Abstraction using Classes:</strong> We can implement Abstraction in c++ using classes. Class helps us to group data members and member
+                    functions using available access specifiers. A Class can decide which data member will be visible to outside world and which is not. <br>
+                    <strong>Abstraction in Header files:</strong> One more type of abstraction in c++ can be header files. For example, consider the pow() method present in
+                    math.h header file. Whenever we need to calculate power of a number, we simply call the function pow() present in the math.h header file and
+                    pass the numbers as arguments without knowing the underlying algorithm according to which the function is actually calculating power of
+                    numbers.
+                    </p>
+                    
+                    Advantages of Data Abstraction:<ol>
+                        <li>Helps the user to avoid writing the low level code</li>
+                        <li>Avoids code duplication and increases reusability.</li>
+                        <li>Can change internal implementation of class independently without affecting the user.</li>
+                        <li>Helps to increase security of an application or program as only important details are provided to the user.</li>
+                    </ol>
+            </div>
+            <div id="Encapsulation">
+                <h3>Encapsulation</h3>
+                <p>In normal terms Encapsulation is defined as wrapping up of data and information under a single unit. In Object Oriented Programming,
+                    Encapsulation is defined as binding together the data and the functions that manipulates them. Consider a real life example of encapsulation,
+                    in a company there are different sections like the accounts section, finance section, sales section etc. The finance section handles all the
+                    financial transactions and keep records of all the data related to finance. Similarly the sales section handles all the sales related activities and
+                    keep records of all the sales. Now there may arise a situation when for some reason an official from finance section needs all the data about
+                    sales in a particular month. In this case, he is not allowed to directly access the data of sales section. He will first have to contact some other
+                    officer in the sales section and then request him to give the particular data. This is what encapsulation is. Here the data of sales section and
+                    the employees that can manipulate them are wrapped under a single name "sales section".
+                </p>
+                <p>Encapsulation also lead to data abstraction or hiding. As using encapsulation also hides the data. In the above example the data of any of the
+                    section like sales, finance or accounts is hidden from any other section.
+                    In C++ encapsulation can be implemented using Class and access modifiers.
+                </p>
+            </div>
+        </div>
+    </div>
+    </main>
+    </body>
+</html>
+
+                
+                
+                
+                
+
+
+
+
+
+
