@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+#contain{
+    width: 65%;
+    margin-top:75px;
+}
+#question{
+    color: black;
+    padding: 2px;
+    height: 60px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#opt1,#opt2,#opt3,#opt4{
+    height: 50px;
+    width: 40%;
+    margin: 5px auto;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(180, 95, 112);
+}
+#btn{
+    margin-left: 30px;
+    width: 75%;
+    
+}
+#score{
+    font-size: large;
+    margin-left: 50px;
+}
+span{
+    border-radius: 5px;
+    padding: 5px 20px 10px 20px;
+    width: 50px;
+    color: white;
+}
+#opt .victory{
+    background-color: green;
+}
+#opt .wrong{
+    background-color: red;
+}
