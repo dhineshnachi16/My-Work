@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Inconsolata&display=swap');
+body{
+    background-color: rgb(5, 164, 226);
+}
+.container{
+    margin: 30px auto;
+    border-radius: 15px;
+    width: 40%;
+}
+h1{
+    text-align: center;
+}
+p{
+    font-family: 'Inconsolata', monospace,'Caveat', cursive;
+}
+#added{
+    text-align: center;
+    background-color: rgba(144, 238, 144, 0.637);
+}
+#error,#deleted,#allDel{
+    text-align: center;
+    background-color: rgba(205, 92, 92, 0.651);
+}
+#clear{
+    text-align: center;
+    color: indianred;
+    cursor: pointer;
+}
+#btn{
+    background-color: rgb(23, 75, 95);
+    cursor: pointer;
+
+}
+ol{
+    padding: 20px;
+    color: indianred;
+}
+li:hover{
+    cursor: pointer;
+}
+ol #edit,#delete{
+    float: right;
+}
