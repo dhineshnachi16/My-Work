@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+body{
+    background-color: rgb(75, 73, 73);
+}
+button:hover{
+    cursor: pointer;
+}
+$primary-color:rgb(228, 153, 14);
+$secondary-color:rgb(182, 181, 181);
+$font-head:'Dancing Script', cursive;
+$font-basic:'Josefin Sans',sans-serif;
+$head-size:70px;
+$sub-size: 40px;
+$base-pad:15px;
+
+@mixin but {
+    width: 250px;
+    padding: 20px;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+    background-color: rgba(0, 255, 255, 0);
+    font-family: $font-basic;   
+    font-size: 20px;
+}
