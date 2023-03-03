@@ -2,11 +2,12 @@
     box-sizing: border-box;
 }
 body{
-    background-color: black;
+    background-color: rgb(151, 199, 218);
 }
 #contain{
     width: 65%;
     margin-top:75px;
+    border-radius: 15px;
 }
 #question{
     color: black;
@@ -43,4 +44,7 @@ span{
 }
 #opt .wrong{
     background-color: red;
+}
+#opt1,#opt2,#opt3,#opt4:hover{
+    cursor: pointer;
 }
